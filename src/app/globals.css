@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin: 0px;
+}
+
+.service-arrow:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -67px;
+  width: 76px;
+  height: 45px;
+  background-image: url(/_next/static/media/arrow.11cc8286.png) !important;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_bg {
+  content: '';
+  width: 100%;
+  background-image: url('./assets/images/banner_img_bg.png') !important;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.tab-bg {
+  width: 100%;
+  background-image: url('./assets/images/tab_bg.png') !important;
+  background-position: center;
+  z-index: -1;
+}
+.swiper-wrapper {
+  align-items: center;
+}

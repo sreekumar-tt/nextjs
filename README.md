@@ -45,7 +45,7 @@ This is a **static** website built with **Next.js**, **Tailwind CSS**, and **MUI
 ##  Screenshots
 
 ###  Home Page
-![Home Page](public/homepage.png)
+![Home Page](./public/homepage.png)
 
 ###  Product List
 ![Product List](public/readme-assets/products.png)

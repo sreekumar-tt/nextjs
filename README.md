@@ -47,11 +47,11 @@ This is a **static** website built with **Next.js**, **Tailwind CSS**, and **MUI
 ###  Home Page
 ![Home Page](./public/homepage.png)
 
-###  Product List
-![Product List](public/readme-assets/products.png)
+###  Service List
+![Product List](./public/product.png)
 
 ###  Mobile Responsive View
-![Mobile View](public/readme-assets/mobile-view.png)
+![Mobile View](./public/mobile_%20responsive.png)
 
 ##  Features
 -Static website with **Next.js & TypeScript**  

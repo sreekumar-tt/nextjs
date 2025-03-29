@@ -76,9 +76,9 @@ const CarServiceSection: React.FC = () => {
           Secure your service in Just 3 steps
         </h2>
         <div className='flex flex-col md:flex-row items-center justify-center lg:justify-start gap-25'>
-          {serviceSteps.map((step, index) => (
+          {serviceSteps.map((step) => (
             <div
-              key={index}
+              key={step.step}
               className='flex flex-col items-center service-arrow  relative'
             >
               {/* <span className='text-2xl'>{step.icon}</span> */}

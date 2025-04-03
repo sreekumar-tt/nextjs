@@ -11,7 +11,7 @@ const Header = () => {
         <h1 className='text-[35px] font-[700] font-openSans  bg-gradient-to-r from-[#0060EF] via-[#150190] to-[#8601F0] bg-clip-text text-transparent'>RUMO</h1>
 
         <div className='flex items-center gap-4'>
-          <button className='flex items-center  gap-2 border-[#3A21D5] cursor-pointer font-openSans rounded-[4px] px-[15px] py-[10px] text-[#3A21D5] border-2 text-[14px] font-[700]'>
+          <button className='flex items-center  gap-2 border-[#3A21D5] cursor-pointer font-openSans rounded-[4px] px-[15px] py-[10px] text-[#3A21D5] md:border-2 text-[14px] font-[700]'>
             <Image
               alt='image'
               width={19}

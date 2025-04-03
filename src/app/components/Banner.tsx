@@ -42,7 +42,7 @@ const bannerData = [
 const Banner = () => {
   return (
     <section>
-    <div className='container-fluid relative'>
+    <div className='container-fluid relative lg:px-0 px-4'>
       {/* Swiper Container */}
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -58,17 +58,18 @@ const Banner = () => {
       >
         {bannerData.map((banner, index) => (
           <SwiperSlide key={index}>
-            <section className='banner_bg relative'>
-              <div className='flex flex-col md:flex-row text-white p-6 md:px-[80px] md:py-[60px] overflow-hidden'>
+            <section className='banner_bg relative rounded-lg md:rounded-none'>
+              <div className='flex flex-col md:flex-row text-white p-4 md:px-[80px] md:py-[60px] overflow-hidden'>
                 <div className='flex-1 flex flex-col justify-center space-y-3 md:space-y-4 text-left lg:text-left'>
-                  <p className='text-[18px] font-[400] font-openSans'>{banner.location}</p>
+                  <p className='text-[18px] font-[400] font-openSans hidden md:block'>{banner.location}</p>
                   <h1 className='text-[30px] lg:text-[60px] font-bold mt-2 font-poppins'>{banner.title}</h1>
                   <p className='text-md md:text-[22px] font-[300] pb-5 font-poppins'>{banner.description}</p>
-                  <p className='text-sm md:text-[18px] font-[400] text-[#66FFC7] pb-1 font-openSans'>{banner.offer}</p>
+                  <p className='text-sm md:text-[18px] font-[400] text-[#66FFC7] pb-1 font-openSans text-end md:text-start'>{banner.offer}</p>
                   <button className='bg-white text-[#1A70F1] px-4 py-3 md:px-6 md:py-3 rounded-[4px] font-semibold shadow-lg cursor-pointer w-auto hover:bg-gray-200 md:w-[295px] font-openSans'>
                     {banner.buttonText}
                   </button>
-                  <div className='flex flex-row md:flex-row items-center justify-start md:justify-start space-y-2 md:space-y-0 md:space-x-4 mt-4'>
+                  <div className='hidden md:block'>
+                  <div className='flex flex-row md:flex-row items-center justify-start md:justify-start space-y-2 md:space-y-0 md:space-x-4 mt-4 '>
                     <div className='flex items-left space-x-1 flex-col'>
                       {/* <span className='text-yellow-400 gap-5 text-lg md:text-xl'>★ ★ ★ ★ ★</span> */}
                       <Image
@@ -88,9 +89,10 @@ const Banner = () => {
                       </span>
                     </div>
                   </div>
+                  </div>
                 </div>
-                <div className='flex-1 mt-6 md:mt-0 md:ml-6 flex justify-center hidden lg:block'>
-                  <Image alt='image' width={600} height={350} src={banner.image} />
+                <div className='flex-1 mt-6 md:mt-0 md:ml-6 flex justify-end hidden lg:block'>
+                  <Image alt='image' width={670} height={350} src={banner.image} />
                 </div>
               </div>
             </section>

@@ -28,8 +28,8 @@ const BrandsSection = () => {
   return (
     <div className="p-6 text-center">
       <div className="p-3 mb-4">
-        <h3 className="text-[24px] font-[600] text-[#373751]  font-poppins">Brands we Use</h3>
-        <p className="text-[14px] font-[400] font-openSans pt-2 text-[#6B6B80]">
+        <h3 className="md:text-[24px] text-[14px] font-[600] text-[#373751]  font-poppins">Brands we Use</h3>
+        <p className="md:text-[14px] text-[12px] font-[400] font-openSans pt-2 text-[#6B6B80]">
           Authorized Genuine OEM/OES Parts
         </p>
       </div>

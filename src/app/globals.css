@@ -62,10 +62,28 @@ p {
 
 .tab-bg {
   width: 100%;
-  background-image: url('./assets/images/tab_bg.png') !important;
+  background-image: url('./assets/images/tab_bg.png') ;
   background-position: center;
   z-index: -1;
 }
 .swiper-wrapper {
   align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .tab-bg {
+ 
+    background-image: unset;
+    background-position: center;
+ 
+  }
+  .banner_bg {
+    content: '';
+    width: 100%;
+    background-image: url('./assets/images/mob_banner_bg.png') !important;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+   
+  }
+  }

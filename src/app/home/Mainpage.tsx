@@ -5,7 +5,6 @@ import BrandsSection from '../components/Brands';
 import ServiceCard from '../components/ServiceCard';
 import { WhatsAppButton } from '../components/Header';
 import bannerImg1 from '@/app/assets/images/banner_img1.png';
-import bannerImg2 from '@/app/assets/images/banner_img_2.png';
 import Image from 'next/image';
 import userIcon from '@/app/assets/images/user_icon.png';
 import star from '@/app/assets/images/stars.png';

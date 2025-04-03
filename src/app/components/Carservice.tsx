@@ -35,9 +35,10 @@ const CarServiceSection: React.FC = () => {
     <div className='container mx-auto p-4 lg:flex md:my-5 md:justify-between '>
       {/* Car Brands Section */}
       <div className='w-full lg:w-1/2 text-center md:text-left mb-6 lg:mb-0'>
-        <h2 className='text-[30px] font-[600] font-semibold mb-6 text-center'>
+        <h2 className='mb-6 text-center lg:text-[36px] text-[24px] font-[700] text-gray-900 font-poppins'>
           Car Brands we service
         </h2>
+        <div className="w-full mt-5 lg:mt-16">
         <Swiper
           slidesPerView={3}
           spaceBetween={20}
@@ -68,11 +69,12 @@ const CarServiceSection: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        </div>
       </div>
 
       {/* Service Steps Section */}
       <div className='w-full lg:w-1/2 text-center border-t border-[#6b6b802e] md:border-t-0 md:border-l  md:pl-6 pt-6 md:pt-0 hidden md:block'>
-        <h2 className='text-[30px] font-[600] font-semibold mb-6 text-center '>
+        <h2 className='mb-6 text-center lg:text-[36px] text-[24px] font-[700] text-gray-900 font-poppins'>
           Secure your service in Just 3 steps
         </h2>
         <div className='flex flex-col md:flex-row items-center justify-center lg:justify-start gap-25'>
@@ -89,7 +91,7 @@ const CarServiceSection: React.FC = () => {
                 height={60}
                 className=' object-contain '
               />
-              <p className='text-sm mt-2'>{step.step}</p>
+              <p className='text-sm mt-2 font-openSans text-[15px] font-[700]'>{step.step}</p>
             </div>
           ))}
         </div>

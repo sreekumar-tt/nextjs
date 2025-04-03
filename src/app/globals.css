@@ -3,6 +3,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-poppins: "Poppins", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins) !important;
+}
+
+.font-openSans {
+  font-family: var(--font-open-sans) !important;
 }
 
 @theme inline {
@@ -35,7 +45,7 @@ p {
   right: -67px;
   width: 76px;
   height: 45px;
-  background-image: url(/_next/static/media/arrow.11cc8286.png) !important;
+  background-image: url('./assets/images/arrow.png') !important;
   background-size: cover;
   background-position: center;
   z-index: -1;

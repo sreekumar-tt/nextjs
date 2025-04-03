@@ -77,23 +77,24 @@ const ServiceCard: React.FC = () => {
     <div className='grid grid-cols-1 md:grid-cols-2   rounded-[20px]  '>
       {services.map((service) => (
         <div
-          key={service.id}
-          className='bg-white  border-b-1 border-r-1  border-[#6b6b802e]  overflow-hidden pt-[25px] ps-[25px] flex flex-col md:flex-row items-center lg:items-end'
+          key={service.id} 
+          // items-center lg:items-end
+          className='bg-white  border-b-1 border-r-1  border-[#6b6b802e]  overflow-hidden pt-[25px] ps-[25px] flex flex-col md:flex-row '
         >
           {/* Content Section */}
           <div className='md:w-2/3 w-full pb-[25px]'>
-            <h2 className='text-xl font-semibold mb-4 '>{service.title}</h2>
-            <p className='text-black-500 flex '>
+            <h2 className=' text-[17px] lg:text-[28px] font-[700]  font-poppins mb-4'>{service.title}</h2>
+            <p className='text-[14px] font-[400] font-openSans flex '>
               <Image src={service.icon} alt={service.title} className='object-contain mr-2'/>
               {service.duration}
             </p>
-            <p className='text-black-500 flex '>
+            <p className='text-[14px] font-[400] font-openSans flex '>
               <Image src={service.book} alt={service.title} className='object-contain mr-2' />
               {service.servicesIncluded}
             </p>
-            <p className='text-[#1E3A8A] font-[400] pt-2'>See details</p>
+            <p className='text-blue-600  text-[12px] font-[400] font-openSans pt-2'>See details</p>
             <div className='flex gap-4 mt-4'>
-              <button className='text-[12px] cursor-pointer bg-gradient-to-r from-blue-600 via-blue-800 to-purple-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg text-lg mt-4'>
+              <button className='text-[12px] tracking-[2px] font-openSans bg-gradient-to-r from-blue-600 via-blue-800 to-purple-600 text-white font-bold w-[182px] h-[52px] rounded-[4px] shadow-lg text-lg '>
                 BOOK NOW
               </button>
               <button className='bg-purple-600 text-white px-4 py-2 rounded md:hidden'>
@@ -102,21 +103,29 @@ const ServiceCard: React.FC = () => {
             </div>
           </div>
           {/* Image for desktop view */}
-          <div className='w-1/3'>
-            <p className='text-[12px] font-[500] text-end pe-3 flex justify-end items-center'>
+          <div className='w-1/3 flex justify-end '>
+          <div className='justify-between flex md:flex-col'>
+          <div >
+          <div className='flex justify-end items-center pe-3'>
+          <p className='text-[12px] font-[500] text-end  font-poppins hidden  lg:block line-through'>
               {service.oldPrice}
-              <span className='text-[25px] font-[700]  text-end pl-2 '>
-                {service.price}
-              </span>
+             
             </p>
-            <p className='text-[12px] text-end pe-3 pb-3'>tax included</p>
-            <div className='hidden md:block '>
+            <p className='text-[30px] font-[700]  text-end pl-2 font-poppins'>
+                {service.price}
+              </p>
+          </div>
+           
+            <p className='text-[12px] font-[400] font-poppins text-end pe-3 pb-3'>tax included</p>
+            </div>
+            <div className='hidden lg:block '>
               <Image
                 src={service.image}
                 alt={service.title}
                 className='w-full h-auto object-cover'
               />
             </div>
+          </div>
           </div>
         </div>
       ))}
@@ -142,9 +151,9 @@ const TabsComponent: React.FC = () => {
             />
             <div>
               <div className='flex'>
-                <h2 className='text-lg font-bold'>
-                  Maruti Swift{' '}
-                  <span className='text-sm text-[#FFFFFF]'>
+                <h2 className='text-[16px] md:text-[24px] font-[700] font-poppins '>
+                  Maruti Swift
+                  <span className='text-[16px] md:text-[24px] font-[400] font-poppins ps-2'>
                     Lxi, Petrol, 2009
                   </span>
                 </h2>
@@ -156,10 +165,10 @@ const TabsComponent: React.FC = () => {
                   className='object-contain ms-4 cursor-pointer'
                 />
               </div>
-              <p className='text-lg font-[600] text-[#FFFFFF]'>DLI2AT5140</p>
+              <p className='text-[12px] md:text-[24px] font-[600] font-poppins text-[#FFFFFF]'>DLI2AT5140</p>
             </div>
           </div>
-          <p className='text-lg font-bold'>
+          <p className='text-[12px] md:text-[24px] font-[700] font-poppins'>
             There are 12 services<br></br>
             available for Maruti Swift
           </p>
@@ -186,7 +195,7 @@ const TabsComponent: React.FC = () => {
                 height={60}
                 className='object-contain'
               />
-              <span className='mt-2 font-semibold'>{tab.label}</span>
+              <span className='mt-2 text-[12px] md:text-[20px] font-[500] font-poppins'>{tab.label}</span>
             </button>
           ))}
         </div>
@@ -262,7 +271,7 @@ const ServiceCardMob: React.FC = () => {
             <Image
                 src={service.image}
                 alt={service.title}
-                className=' object-cover'
+                className='object-cover'
                 width={60}
                 height={50}
               />
@@ -278,7 +287,7 @@ const ServiceCardMob: React.FC = () => {
           >
             {/* Content Section */}
             <div className='md:w-2/3 w-full pb-[25px]'>
-              <h2 className='text-xl font-semibold mb-4 '>{service.title}</h2>
+              <h2 className='text-[16px]   font-semibold mb-4 '>{service.title}</h2>
               <p className='text-black-500 flex '>
                 <Image src={service.icon} alt={service.title} className='object-contain mr-2'/>
                 {service.duration}
@@ -299,12 +308,14 @@ const ServiceCardMob: React.FC = () => {
             </div>
             {/* Image for desktop view */}
             <div className='w-1/3'>
-              <p className='text-[12px] font-[500] text-end pe-3 flex justify-end items-center'>
-                {service.oldPrice}
-                <span className='text-[25px] font-[700]  text-end pl-2 '>
+              
+                <p className='text-[25px] font-[700]  text-end pl-2 pe-2'>
                   {service.price}
-                </span>
+             
               </p>
+              <p className='text-[12px] font-[500] text-end flex justify-end items-center pe-2 line-through text-gray-500 '>
+                {service.oldPrice}
+                </p>
               {/* <p className='text-[12px] text-end pe-3 pb-3'>tax included</p> */}
               <div className='hidden md:block '>
                 <Image

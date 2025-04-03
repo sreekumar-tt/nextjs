@@ -18,6 +18,7 @@ const Mainpage = () => {
     
       <ServiceCard />
       <div className='block md:hidden'>
+      <hr className="border-[#6b6b802e]" />
       {bannerData.map((banner, index) => (
          
                   <div className='' key={index}>

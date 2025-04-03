@@ -10,7 +10,7 @@ const Header = () => {
       <div className="mx-5 flex items-center justify-between p-3">
         <h1 className='text-[35px] font-[700] font-openSans  bg-gradient-to-r from-[#0060EF] via-[#150190] to-[#8601F0] bg-clip-text text-transparent'>RUMO</h1>
 
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center md:gap-4 gap-2'>
           <button className='flex items-center  gap-2 border-[#3A21D5] cursor-pointer font-openSans rounded-[4px] px-[15px] py-[10px] text-[#3A21D5] md:border-2 text-[14px] font-[700]'>
             <Image
               alt='image'
@@ -20,13 +20,14 @@ const Header = () => {
             />
             CALL US
           </button>
-          <Image
-            alt='image'
-            width={40}
-            height={40}
-            className='cursor-pointer'
-            src={profile}
-          />
+          <span className="relative w-[20px] h-[20px] md:w-[40px] md:h-[40px]">
+      <Image
+        alt="image"
+        src={profile}
+        fill
+        className="cursor-pointer object-contain"
+      />
+    </span>
         </div>
       </div>
 

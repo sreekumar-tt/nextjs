@@ -363,7 +363,7 @@ const ServiceCardMob: React.FC = () => {
           )}
         </div>
       ))}
-      <div className='text-center pt-3'>
+      <div className='text-center py-3'>
       <button className='text-[12px] tracking-[2px] font-openSans bg-gradient-to-r from-blue-600 via-blue-800 to-purple-600 text-white font-bold w-[182px] h-[52px] rounded-[4px] shadow-lg text-lg '>
                 BOOK A SERVICE
               </button>
